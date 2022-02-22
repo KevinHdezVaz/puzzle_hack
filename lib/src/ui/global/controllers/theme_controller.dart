@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:puzle_hack/src/domain/repositories/settings_repository.dart';
-import 'package:puzle_hack/src/ui/utils/colors.dart';
+import 'package:puzle_hack/src/ui/utils/colors.dart'; 
 
 
 class ThemeController extends ChangeNotifier {
@@ -32,10 +32,10 @@ class ThemeController extends ChangeNotifier {
   ThemeData get lightTheme {
     return ThemeData.light().copyWith(
       brightness: Brightness.light,
-      scaffoldBackgroundColor: Colors.white,
+      scaffoldBackgroundColor: Colors.white54,
       appBarTheme: const AppBarTheme(
         systemOverlayStyle: SystemUiOverlayStyle.light,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.white60,
         elevation: 0,
         iconTheme: IconThemeData(
           color: lightColor,

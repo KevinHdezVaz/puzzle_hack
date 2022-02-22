@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:puzle_hack/src/ui/pages/game/game_view.dart';
+import 'package:puzle_hack/src/ui/pages/game/vista_juego.dart';
 import 'package:puzle_hack/src/ui/pages/privacy/privacy_view.dart';
 import 'package:puzle_hack/src/ui/pages/splash/splash_view.dart';
 import 'package:puzle_hack/src/ui/routes/routes.dart';

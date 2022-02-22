@@ -120,16 +120,6 @@ class S {
     );
   }
 
-  /// `GREAT JOB!`
-  String get great_job {
-    return Intl.message(
-      'GREAT JOB!',
-      name: 'great_job',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `You have completed the puzzle`
   String get completed {
     return Intl.message(

@@ -41,12 +41,9 @@ class GameController extends ChangeNotifier {
   void onTileTapped(Tile tile) {
     final canMove = puzzle.canMove(tile.position);
 
-    /// if the tile can be moved
     if (canMove) {
-      // move the tile or multiples tiles
       final newPuzzle = puzzle.move(tile);
 
-      // check if the puzzle was solved
       final solved = newPuzzle.isSolved();
       _state = state.copyWith(
         puzzle: newPuzzle,

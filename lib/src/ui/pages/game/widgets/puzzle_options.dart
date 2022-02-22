@@ -18,7 +18,8 @@ class PuzzleOptions extends StatefulWidget {
   State<PuzzleOptions> createState() => _PuzzleOptionsState();
 }
 
-class _PuzzleOptionsState extends State<PuzzleOptions> with AutomaticKeepAliveClientMixin {
+class _PuzzleOptionsState extends State<PuzzleOptions>
+    with AutomaticKeepAliveClientMixin {
   late PageController _pageController;
 
   int _page = 0;
@@ -120,7 +121,7 @@ class _PuzzleOptionsState extends State<PuzzleOptions> with AutomaticKeepAliveCl
         ),
         Align(
           alignment: Alignment.bottomCenter,
-          child: SmoothPageIndicator(
+           child: SmoothPageIndicator(
             controller: _pageController, // PageController
             count: puzzleOptions.length,
             effect: CustomizableEffect(

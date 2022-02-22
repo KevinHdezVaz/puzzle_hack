@@ -13,7 +13,9 @@ const Map<int, Color> swatch = {
   900: Color.fromRGBO(136, 14, 79, 1),
 };
 
-const lightColor = Color(0xfff0f0f0);
-const lightColor2 = Color(0xfff9f9f9);
-const darkColor = Color(0xff002942);
+const lightColor = Color(0xfff2f0f0);
+const lightColor2 = Color(0xfff5f9f9);
+const darkColor = Color(0xff003942);
 const acentColor = Color(0xff2196f3);
+
+

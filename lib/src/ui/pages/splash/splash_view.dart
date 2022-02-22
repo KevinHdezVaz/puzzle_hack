@@ -3,12 +3,11 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:particles_flutter/particles_flutter.dart';
 import 'package:puzle_hack/src/data/repositories_impl/images_repository_impl.dart';
-import 'package:puzle_hack/src/ui/pages/game/game_view.dart';
-import 'package:puzle_hack/src/ui/pages/splash/circle_transition_clipper.dart';
-import 'package:puzle_hack/src/ui/utils/colors.dart';
-import 'package:puzle_hack/src/ui/utils/dark_mode_extension.dart';
-import 'package:puzle_hack/src/ui/utils/responsive.dart';
+import 'package:puzle_hack/src/ui/menuprin/menu.dart';
+ import 'package:puzle_hack/src/ui/pages/splash/circle_transition_clipper.dart';
+  import 'package:puzle_hack/src/ui/utils/responsive.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({Key? key}) : super(key: key);
@@ -17,7 +16,8 @@ class SplashView extends StatefulWidget {
   _SplashViewState createState() => _SplashViewState();
 }
 
-class _SplashViewState extends State<SplashView> with SingleTickerProviderStateMixin {
+class _SplashViewState extends State<SplashView>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
 
@@ -26,7 +26,7 @@ class _SplashViewState extends State<SplashView> with SingleTickerProviderStateM
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 1),
+      duration: const Duration(seconds: 3),
     );
     _animation = CurvedAnimation(
       parent: _controller,
@@ -37,7 +37,7 @@ class _SplashViewState extends State<SplashView> with SingleTickerProviderStateM
       (status) {
         if (status == AnimationStatus.completed) {
           Timer(
-            const Duration(seconds: 1),
+            const Duration(seconds: 2),
             _goToGame,
           );
         }
@@ -48,8 +48,9 @@ class _SplashViewState extends State<SplashView> with SingleTickerProviderStateM
 
   void _goToGame() {
     final route = PageRouteBuilder(
-      pageBuilder: (_, animation, secondaryAnimation) => const GameView(),
-      transitionDuration: const Duration(milliseconds: 1500),
+      pageBuilder: (_, animation, secondaryAnimation) =>   MenuPrincipal(),
+      //gameview
+      transitionDuration: const Duration(milliseconds: 3000),
       transitionsBuilder: (
         context,
         animation,
@@ -81,11 +82,8 @@ class _SplashViewState extends State<SplashView> with SingleTickerProviderStateM
   void _setDeviceOrientation() {
     WidgetsBinding.instance?.addPostFrameCallback(
       (_) {
-        // The equivalent of the "smallestWidth" qualifier on Android.
         var shortestSide = MediaQuery.of(context).size.shortestSide;
 
-        // Determine if we should use mobile layout or not, 600 here is
-        // a common breakpoint for a typical 7-inch tablet.
         final bool useMobileLayout = shortestSide < 600;
         if (useMobileLayout) {
           SystemChrome.setPreferredOrientations(
@@ -107,6 +105,8 @@ class _SplashViewState extends State<SplashView> with SingleTickerProviderStateM
 
   @override
   Widget build(BuildContext context) {
+    double screenHeight = MediaQuery.of(context).size.height;
+    double screenWidth = MediaQuery.of(context).size.width;
     final options = puzzleOptions.getRange(
       1,
       puzzleOptions.length,
@@ -115,8 +115,9 @@ class _SplashViewState extends State<SplashView> with SingleTickerProviderStateM
     final half = options.length ~/ 2;
     final responsive = Responsive.of(context);
 
-    return Scaffold(//TEMA OSCURO O LIGHT
-      backgroundColor: context.isDarkMode ? darkColor : lightColor2,
+    return Scaffold(
+      //TEMA OSCURO O LIGHT
+      backgroundColor: Colors.blue[200],
       body: SizedBox(
         width: double.infinity,
         height: double.infinity,
@@ -136,19 +137,39 @@ class _SplashViewState extends State<SplashView> with SingleTickerProviderStateM
 
                 return Stack(
                   children: [
-                    Positioned(
-                      bottom: -100 + (offset * 100),
-                      left: 0,
-                      right: 0,
-                      child: jungle!,
+                    CircularParticle(
+                      key: UniqueKey(),
+                      awayRadius: 80,
+                      numberOfParticles: 100,
+                      speedOfParticles: 1,
+                      height: screenHeight,
+                      width: screenWidth,
+                      onTapAnimation: true,
+                      particleColor: Colors.white.withAlpha(150),
+                      awayAnimationDuration: Duration(milliseconds: 600),
+                      maxParticleSize: 5,
+                      isRandSize: true,
+                      isRandomColor: true,
+                    
+                      randColorList: [
+                     
+                         Colors.blue,
+                          Colors.green,
+                      ],
+                      awayAnimationCurve: Curves.bounceInOut,
+                      enableHover: true,
+                      hoverColor: Colors.white,
+                      hoverRadius: 50,
+                      connectDots: true, //not recommended
                     ),
+                 
                     Center(
                       child: Transform.scale(
                         scale: offset.clamp(0.5, 1),
                         child: Opacity(
                           opacity: offset.clamp(0, 1),
                           child: Text(
-                            "chino joto",
+                            "PUZZLE \n MANIA",
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: titleSize,
@@ -159,51 +180,12 @@ class _SplashViewState extends State<SplashView> with SingleTickerProviderStateM
                         ),
                       ),
                     ),
-                    ...List.generate(
-                      half,
-                      (index) {
-                        final dy = bottom + (size * 1.1 * index);
-                        return Positioned(
-                          left: dx,
-                          bottom: dy,
-                          child: Transform.rotate(
-                            angle: 15 * math.pi / 180,
-                            child: Image.asset(
-                              options.elementAt(index).assetPath,
-                              width: size,
-                            ),
-                          ),
-                        );
-                      },
-                    ),
-                    ...List.generate(
-                      half,
-                      (index) {
-                        final dy = bottom + (size * 1.1 * index);
-                        return Positioned(
-                          right: dx,
-                          bottom: dy,
-                          child: Transform.rotate(
-                            angle: -15 * math.pi / 180,
-                            child: Image.asset(
-                              options.elementAt(index + half).assetPath,
-                              width: size,
-                            ),
-                          ),
-                        );
-                      },
-                    ),
+                
+                    
                   ],
                 );
               },
-              child: Transform.rotate(
-                angle: math.pi,
-                child: Image.asset(
-                  'assets/images/jungle.png',
-                  width: double.infinity,
-                  color: Colors.primaries[8].withOpacity(0.3),
-                ),
-              ),
+          
             );
           },
         ),

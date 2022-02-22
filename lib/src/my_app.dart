@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:puzle_hack/generated/l10n.dart';
 import 'package:puzle_hack/src/ui/routes/app_routes.dart';
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           themeMode: controller.themeMode,
           theme: controller.lightTheme,
-          darkTheme: controller.darkTheme,
+           darkTheme: controller.darkTheme,
           initialRoute: Routes.splash, 
           routes: appRoutes,
         ),

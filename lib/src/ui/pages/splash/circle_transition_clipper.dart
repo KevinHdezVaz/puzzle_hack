@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 class CircleTransitionClipper extends CustomClipper<Path> {
-  final Offset center;
+   final Offset center;
   final double radius;
 
   CircleTransitionClipper({
@@ -15,6 +15,7 @@ class CircleTransitionClipper extends CustomClipper<Path> {
   Path getClip(Size size) {
     return Path()
       ..addOval(
+  
         Rect.fromCircle(center: center, radius: radius),
       );
   }

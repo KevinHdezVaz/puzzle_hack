@@ -29,7 +29,6 @@ class MessageLookup extends MessageLookupByLibrary {
             "You have completed the puzzle"),
         "dou_you_really": MessageLookupByLibrary.simpleMessage(
             "Do you really want to restart the current puzzle"),
-        "great_job": MessageLookupByLibrary.simpleMessage("GREAT JOB!"),
         "movements": MessageLookupByLibrary.simpleMessage("moves"),
         "no": MessageLookupByLibrary.simpleMessage("NO"),
         "ok": MessageLookupByLibrary.simpleMessage("OK"),

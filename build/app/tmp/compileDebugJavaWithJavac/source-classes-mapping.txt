@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+app/kevin/hack_puzzle/BuildConfig.java
+ app.kevin.hack_puzzle.BuildConfig

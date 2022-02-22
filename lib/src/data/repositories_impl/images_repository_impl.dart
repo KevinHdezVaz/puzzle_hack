@@ -12,6 +12,13 @@ const puzzleOptions = <PuzzleImage>[
     assetPath: 'assets/images/numeric-puzzle.png',
     soundPath: '',
   ),
+
+   PuzzleImage(
+    name: 'Dash',
+    assetPath: 'assets/animals/dash.png',
+    soundPath: 'assets/sounds/lion.mp3',
+  ),
+
   PuzzleImage(
     name: 'Lion',
     assetPath: 'assets/animals/lion.png',

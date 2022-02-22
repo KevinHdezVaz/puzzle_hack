@@ -32,6 +32,9 @@ dependencies:
   flutter_localizations:
     sdk: flutter
 
+  lottie: ^1.2.1
+  particles_flutter: ^0.1.4
+  simple_animations: ^1.3.3
   intl: ^0.17.0
   provider: ^6.0.2
   equatable: ^2.0.3
@@ -68,7 +71,8 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/jungle.png
+    - assets/images/
+    - assets/
     - assets/images/dash.png
     - assets/images/hero-dash.png
     - assets/images/relax-dash.png
@@ -77,13 +81,16 @@ flutter:
     - assets/rive/winner.riv
     - assets/sounds/
     - assets/animals/
-
+    - assets/lottie/
   fonts:
     - family: PuzzleIcons
       fonts:
         - asset: assets/icons/PuzzleIcons.ttf
         - asset: assets/icons/MyFlutterApp.ttf
-
+        
+    - family: Viga-Regular
+      fonts:
+        - asset: assets/fonts/Viga-Regular.ttf
         
 flutter_intl:
   enabled: true

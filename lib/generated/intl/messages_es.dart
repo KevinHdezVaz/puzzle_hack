@@ -29,8 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Has completado el rompecabezas"),
         "dou_you_really": MessageLookupByLibrary.simpleMessage(
             "Realmente quieres reiniciar el rompecabezas actual"),
-        "great_job": MessageLookupByLibrary.simpleMessage("¡GRAN TRABAJO!"),
-        "movements": MessageLookupByLibrary.simpleMessage("movimientos"),
+        "movements": MessageLookupByLibrary.simpleMessage("Movimientos"),
         "no": MessageLookupByLibrary.simpleMessage("NO"),
         "ok": MessageLookupByLibrary.simpleMessage("ACEPTAR"),
         "privacy": MessageLookupByLibrary.simpleMessage(

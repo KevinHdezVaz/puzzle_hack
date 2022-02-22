@@ -1,6 +1,5 @@
-# Puzzle Hack 
+# Puzzle Mania
 
-A slide puzzle game created with flutter for the flutter hack https://flutter.dev/events/puzzle-hack
-
-
+🔥 Un juego de rompecabezas deslizante para el concurso
+https://flutter.dev/events/puzzle-hack
 
