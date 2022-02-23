@@ -23,15 +23,12 @@ class _MenuPrincipalState extends State<MenuPrincipal> {
       title: S.current.comosejuerga,
       img: "assets/images/bombilla.png",
     );
- Items item3 = new Items(
-      title: S.current.redes,
-      img: "assets/images/redes2.png",
-    );
+ 
 
     List<Items> myList = [
       item1,
       item2,
-      item3,
+      
     ];
 
     var size = MediaQuery.of(context).size;
@@ -39,9 +36,9 @@ class _MenuPrincipalState extends State<MenuPrincipal> {
     final double itemHeight = (size.height - kToolbarHeight - 24) / 2;
     final double itemWidth = size.width / 1.6;
 
-    return 
-    Material(
+    return  Material(
           child: Stack(
+
         children: <Widget>[
           Container(
             decoration: BoxDecoration(
@@ -50,109 +47,128 @@ class _MenuPrincipalState extends State<MenuPrincipal> {
               fit: BoxFit.cover,
             )),
           ),
+          Align(
+            alignment: Alignment.topCenter,
+            child: Container(
+              
+              margin: EdgeInsets.only(top: 75),
+              child: Row(
+         mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+
+                Lottie.asset('assets/lottie/abajo.json',height: 175,width: 175),
+                SizedBox(
+                  width: 20,
+                ),
+                Lottie.asset('assets/lottie/abajo.json',height: 175,width: 175),
+                ],
+              ),
+            ) ,
+          ),
           Opacity(
-                opacity: 0.3,
+                opacity: 0.6,
                       child: Container(
               margin: EdgeInsets.only(top: 250),
-              child: Padding(
-                padding: const EdgeInsets.all(50),
-                child: Lottie.asset('assets/lottie/brain2.json'),
+              child: Align(alignment: Alignment.center,
+                              child: Padding(
+                  padding: const EdgeInsets.all(50),
+                  child: Lottie.asset('assets/lottie/brain2.json'),
+                ),
               ),
             ),
           ),
-          GridView.count(
-              shrinkWrap: true,
-              childAspectRatio: (itemWidth / itemHeight),
-              padding: const EdgeInsets.only(left: 16, right: 16, top: 120),
-              crossAxisCount: 2,
-              crossAxisSpacing: 20,
-              mainAxisSpacing: 50,
-              children: myList.map((data) {
-                return   
-             InkWell(
-                            child: Container(
-                      decoration: BoxDecoration(
-                          gradient: const LinearGradient(
-                            begin: Alignment.topRight,
-                            end: Alignment.bottomLeft,
-                            colors: [
-                              Colors.white,
-                              Colors.white54,
-                            ],
-                          ),
-                          border: Border.all(color: Colors.blueAccent),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.withOpacity(0.7),
-                              spreadRadius: 5,
-                              blurRadius: 7,
-                              offset: const Offset(0, 3), // changes position of shadow
+          Center(
+            child: GridView.count(
+                shrinkWrap: true,
+                childAspectRatio: (itemWidth / itemHeight),
+                padding: const EdgeInsets.only(left: 16, right: 16 ),
+                crossAxisCount: 2,
+                crossAxisSpacing: 20,
+                mainAxisSpacing: 50,
+                children: myList.map((data) {
+                  return   
+               InkWell(
+                              child: Container(
+                        decoration: BoxDecoration(
+                            gradient: const LinearGradient(
+                              begin: Alignment.topRight,
+                              end: Alignment.bottomLeft,
+                              colors: [
+                                Colors.white,
+                                Colors.white54,
+                              ],
                             ),
-                            //tienen pensado
+                            border: Border.all(color: Colors.blueAccent),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.7),
+                                spreadRadius: 2,
+                                blurRadius: 7,
+                                offset: const Offset(0, 3),  
+                              ),
+                               
+                            ],
+                            borderRadius: BorderRadius.circular(30)                     
+                            ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Image.asset(
+                              data.img,
+                              width: 120,
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text(
+                              data.title,
+                              style:
+                              TextStyle(fontSize: 20 ,   fontFamily: 'Viga-Regular'  ),                  
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            SizedBox(
+                              height: 14,
+                            ),
+
                           ],
-                          borderRadius: BorderRadius.circular(30)                     
-                          ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Image.asset(
-                            data.img,
-                            width: 120,
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Text(
-                            data.title,
-                            style:
-                            TextStyle(fontSize: 20 ,   fontFamily: 'Viga-Regular'  ),                  
-                          ),
-                          SizedBox(
-                            height: 8,
-                          ),
-                          SizedBox(
-                            height: 14,
-                          ),
-
-                        ],
+                        ),
                       ),
-                    ),
 
-                     onTap: () {
-                    if (data.title == S.current.jugar) {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => GameView()),
-                      );
-                    } else if (data.title == S.current.comosejuerga) {
+                       onTap: () {
+                      if (data.title == S.current.jugar) {
+
+                        
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => GameView()),
+                        );
+                      } else if (data.title == S.current.comosejuerga) {
+                        
+                          showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return CustomSolumath(
+                                      title:
+                                          S.current.mueve,
+                                      descriptions:
+                                        S.current.esdemasiadofacil+ " 🇲🇽❤",
+                                      text: S.current.salir,
+                                    );
+                                  });
+                         
                       
-                        showDialog(
-                                context: context,
-                                builder: (BuildContext context) {
-                                  return CustomSolumath(
-                                    title:
-                                        "¡MUEVE LAS FICHAS HASTA GANAR!",
-                                    descriptions:
-                                       "Es demasiado facil jugar, solamente tienes que acomodar las fichas del primer numero al ultimo con el menor numero de movimientos y tiempo posible!. 🇲🇽❤",
-                                    text: "salir"
-                                  );
-                                });
-                       
-                    
-                    }  else if (data.title == S.current.redes) {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => MenuPrincipal()),
-                      );
-                    }  
-                 
-            
-                  },
-             );  
+                      }   
                    
-               
+              
+                    },
+               );  
+                     
+                 
 
-              }).toList()),
+                }).toList()),
+          ),
         ],
       ),
     );
