@@ -10,5 +10,12 @@
     "time": "Tiempo",
     "ok": "ACEPTAR",
     "privacy":"Este es un juego gratuito sin fines de lucro, el juego no recolecta información de ningun tipo de los usuarios ni tampoco de su trafico, no necesita internet.",
-    "back_to_game":"Regresar al juego"
+    "back_to_game":"Regresar al juego",
+    "jugar": "Jugar",
+    "comosejuerga": "¿Como se \njuega?",
+    "redes": "Redes \nsociales",
+    "salir": "Regresar",
+    "ok": "OK",
+    "ok": "OK",
+    "ok": "OK"
 }

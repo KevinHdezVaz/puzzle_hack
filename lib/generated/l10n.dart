@@ -169,6 +169,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Play`
+  String get jugar {
+    return Intl.message(
+      'Play',
+      name: 'jugar',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `How to \nplay?`
+  String get comosejuerga {
+    return Intl.message(
+      'How to \nplay?',
+      name: 'comosejuerga',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Social media`
+  String get redes {
+    return Intl.message(
+      'Social media',
+      name: 'redes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Back`
+  String get salir {
+    return Intl.message(
+      'Back',
+      name: 'salir',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

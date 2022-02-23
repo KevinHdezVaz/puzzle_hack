@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.kevin.hack_puzzle">
    <application
-         android:label="batman_signin"
+         android:label="Puzzle Mania"
         android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"

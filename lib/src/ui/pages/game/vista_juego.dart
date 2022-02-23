@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:puzle_hack/src/domain/models/move_to.dart';
-import 'package:puzle_hack/src/ui/pages/game/controller/game_controller.dart';
+import 'package:puzle_hack/src/ui/pages/game/controller/juego_controlador.dart';
 import 'package:puzle_hack/src/ui/pages/game/widgets/fondo.dart';
 import 'package:puzle_hack/src/ui/pages/game/widgets/barra_game.dart';
 import 'package:puzle_hack/src/ui/pages/game/widgets/botones_game.dart';
@@ -72,8 +72,7 @@ class GameView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     AppBar(
-                      elevation: 10,
-                      
+                       
                       actions: [
                         Padding(
                           padding: const EdgeInsets.only(right: 15, top: 0),
@@ -93,20 +92,10 @@ class GameView extends StatelessWidget {
                           ),
                         ),
                       ],
-                      title: Text('Puzzle Mania'),
-                     flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-                colors: [
-                  const Color(0xFF3366FF),
-                  const Color(0xFF00CCFF),
-                ],
-                begin: const FractionalOffset(0.0, 0.0),
-                end: const FractionalOffset(1.0, 0.0),
-                stops: [0.0, 1.0],
-                tileMode: TileMode.clamp),
-          ),
-        ),
+                      title: Container(margin: EdgeInsets.only(left: 20), child: Text('Puzzle Mania',style: TextStyle(fontFamily: 'Keyboard-Icon'),)),
+                      automaticallyImplyLeading: false,
+
+                     backgroundColor: Colors.blue[300],
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.vertical(
                               bottom: Radius.circular(40))),

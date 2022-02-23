@@ -25,16 +25,21 @@ class MessageLookup extends MessageLookupByLibrary {
         "are_you_sure": MessageLookupByLibrary.simpleMessage("¿Estás seguro?"),
         "back_to_game":
             MessageLookupByLibrary.simpleMessage("Regresar al juego"),
+        "comosejuerga":
+            MessageLookupByLibrary.simpleMessage("¿Como se \njuega?"),
         "completed": MessageLookupByLibrary.simpleMessage(
             "Has completado el rompecabezas"),
         "dou_you_really": MessageLookupByLibrary.simpleMessage(
             "Realmente quieres reiniciar el rompecabezas actual"),
+        "jugar": MessageLookupByLibrary.simpleMessage("Jugar"),
         "movements": MessageLookupByLibrary.simpleMessage("Movimientos"),
         "no": MessageLookupByLibrary.simpleMessage("NO"),
-        "ok": MessageLookupByLibrary.simpleMessage("ACEPTAR"),
+        "ok": MessageLookupByLibrary.simpleMessage("OK"),
         "privacy": MessageLookupByLibrary.simpleMessage(
             "Este es un juego gratuito sin fines de lucro, el juego no recolecta información de ningun tipo de los usuarios ni tampoco de su trafico, no necesita internet."),
+        "redes": MessageLookupByLibrary.simpleMessage("Redes \nsociales"),
         "restart": MessageLookupByLibrary.simpleMessage("Reiniciar"),
+        "salir": MessageLookupByLibrary.simpleMessage("Regresar"),
         "start": MessageLookupByLibrary.simpleMessage("INICIAR"),
         "time": MessageLookupByLibrary.simpleMessage("Tiempo"),
         "yes": MessageLookupByLibrary.simpleMessage("SI")

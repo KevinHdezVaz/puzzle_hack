@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:puzle_hack/src/data/repositories_impl/images_repository_impl.dart';
-import 'package:puzle_hack/src/ui/pages/game/controller/game_controller.dart';
+import 'package:puzle_hack/src/ui/pages/game/controller/juego_controlador.dart';
 import 'package:puzle_hack/src/ui/utils/colors.dart';
 import 'package:provider/provider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -97,72 +97,90 @@ class _PuzzleOptionsState extends State<PuzzleOptions>
                 final item = puzzleOptions[index];
                 return Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Material(
-                    color: lightColor.withOpacity(isDarkMode ? 0.3 : 0.5),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    elevation: 0,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset(
-                          item.assetPath,
+                  child: Container(
+                    decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topRight,
+                          end: Alignment.bottomLeft,
+                          colors: [
+                            Colors.white,
+                            Colors.blue.withAlpha(100)
+                          ],
+                        ),
+                        border: Border.all(color: Colors.blueAccent),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.2),
+                            spreadRadius: 5,
+                            blurRadius: 7,
+                            offset: Offset(0, 3), // changes position of shadow
+                          ),
+                        ],
+                        borderRadius: BorderRadius.circular(40)),
+                    child: Material(
+                      color: lightColor.withOpacity(0.5),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                      elevation: 0,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(10),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Image.asset(
+                            item.assetPath,
+                          ),
                         ),
                       ),
                     ),
                   ),
                 );
+                
               },
               itemCount: puzzleOptions.length,
             ),
           ),
         ),
+      
         Align(
-          alignment: Alignment.bottomCenter,
-           child: SmoothPageIndicator(
-            controller: _pageController, // PageController
-            count: puzzleOptions.length,
-            effect: CustomizableEffect(
-              activeDotDecoration: DotDecoration(
-                width: 32,
-                height: 12,
-                color: Colors.indigo,
-                rotationAngle: 180,
-                verticalOffset: 0,
-                borderRadius: BorderRadius.circular(24),
-              ),
-              dotDecoration: DotDecoration(
-                width: 24,
-                height: 12,
-                color: Colors.grey,
-                borderRadius: BorderRadius.circular(16),
-                verticalOffset: 0,
-              ),
-              spacing: 6.0,
-              activeColorOverride: (i) => Colors.primaries[i],
-              inActiveColorOverride: (i) => Colors.primaries[i].withOpacity(0.2),
+            alignment: Alignment.bottomCenter,
+            
+            child: SmoothPageIndicator(
+              
+              controller: _pageController, 
+              count: puzzleOptions.length,
+         
+              effect:  ExpandingDotsEffect(  
+      spacing:  12.0,  
+      radius:  20.0,  
+      dotWidth:  24.0,   
+      
+      dotHeight:  18.0,  
+      paintStyle:  PaintingStyle.stroke,  
+      strokeWidth:  2,  
+      dotColor:  Colors.cyan.shade200,  
+      activeDotColor:  Colors.lightBlue  
+   ),  
+              onDotClicked: (index) {
+                _pageController.animateToPage(
+                  index,
+                  duration: const Duration(milliseconds: 300),
+                  curve: Curves.fastLinearToSlowEaseIn,
+                );
+              },
             ),
-            onDotClicked: (index) {
-              _pageController.animateToPage(
-                index,
-                duration: const Duration(milliseconds: 300),
-                curve: Curves.ease,
-              );
-            },
-          ),
+        
         ),
         Align(
           alignment: Alignment.topCenter,
-          child: Transform.rotate(
-            angle: 90 * pi / 180,
-            child: const Icon(
-              Icons.play_arrow_rounded,
+          child: 
+            
+             Icon(
+              Icons.arrow_drop_down_circle,
               size: 50,
-              color: acentColor,
+              color: Colors.amber
             ),
-          ),
+          
         ),
       ],
     );

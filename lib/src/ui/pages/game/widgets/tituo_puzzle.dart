@@ -2,7 +2,7 @@ import 'dart:typed_data';
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:puzle_hack/src/domain/models/tile.dart';
-import 'package:puzle_hack/src/ui/pages/game/controller/game_state.dart';
+import 'package:puzle_hack/src/ui/pages/game/controller/estado_juego.dart';
 import 'package:puzle_hack/src/ui/utils/colors.dart';
 import 'package:puzle_hack/src/ui/utils/dark_mode_extension.dart';
 

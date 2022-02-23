@@ -44,8 +44,8 @@
 28        android:debuggable="true"
 29        android:icon="@mipmap/launcher_icon"
 29-->/Users/kevinhernandez/flutter-puzzle-hack-1/android/app/src/main/AndroidManifest.xml:5:9-45
-30        android:label="batman_signin" >
-30-->/Users/kevinhernandez/flutter-puzzle-hack-1/android/app/src/main/AndroidManifest.xml:4:10-39
+30        android:label="Puzzle Mania" >
+30-->/Users/kevinhernandez/flutter-puzzle-hack-1/android/app/src/main/AndroidManifest.xml:4:10-38
 31        <activity
 31-->/Users/kevinhernandez/flutter-puzzle-hack-1/android/app/src/main/AndroidManifest.xml:6:9-26:20
 32            android:name="app.kevin.hack_puzzle.MainActivity"

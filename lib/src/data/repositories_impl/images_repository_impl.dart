@@ -8,67 +8,42 @@ import 'package:puzle_hack/src/domain/repositories/images_repository.dart';
 
 const puzzleOptions = <PuzzleImage>[
   PuzzleImage(
-    name: 'Numeric',
-    assetPath: 'assets/images/numeric-puzzle.png',
-    soundPath: '',
+    name: 'Numerico',
+    assetPath: 'assets/figuras/numeric-puzzle.png',
+    soundPath: 'assets/sounds/clika.mp3',
   ),
 
    PuzzleImage(
-    name: 'Dash',
-    assetPath: 'assets/animals/dash.png',
-    soundPath: 'assets/sounds/lion.mp3',
+    name: 'Gallina',
+    assetPath: 'assets/figuras/tigre.png',
+    soundPath: 'assets/sounds/clika.mp3',
   ),
 
   PuzzleImage(
-    name: 'Lion',
-    assetPath: 'assets/animals/lion.png',
-    soundPath: 'assets/sounds/lion.mp3',
-  ),
-  PuzzleImage(
-    name: 'Cat',
-    assetPath: 'assets/animals/cat.png',
-    soundPath: 'assets/sounds/cat.mp3',
-  ),
-  PuzzleImage(
-    name: 'Dog',
-    assetPath: 'assets/animals/dog.png',
-    soundPath: 'assets/sounds/dog.mp3',
-  ),
-  PuzzleImage(
-    name: 'Fox',
-    assetPath: 'assets/animals/fox.png',
-    soundPath: 'assets/sounds/fox.mp3',
+    name: 'Leon',
+    assetPath: 'assets/figuras/leon.webp',
+    soundPath: 'assets/sounds/clika.mp3',
   ),
   PuzzleImage(
     name: 'Koala',
-    assetPath: 'assets/animals/koala.png',
-    soundPath: 'assets/sounds/koala.mp3',
+    assetPath: 'assets/figuras/koala.webp',
+    soundPath: 'assets/sounds/clika.mp3',
   ),
   PuzzleImage(
-    name: 'Monkey',
-    assetPath: 'assets/animals/monkey.png',
-    soundPath: 'assets/sounds/monkey.mp3',
+    name: 'Pato',
+    assetPath: 'assets/figuras/tucan.png',
+    soundPath: 'assets/sounds/clika.mp3',
   ),
   PuzzleImage(
-    name: 'Mouse',
-    assetPath: 'assets/animals/mouse.png',
-    soundPath: 'assets/sounds/mouse.mp3',
+    name: 'Perro',
+    assetPath: 'assets/figuras/perro.png',
+    soundPath: 'assets/sounds/clika.mp3',
   ),
   PuzzleImage(
-    name: 'Panda',
-    assetPath: 'assets/animals/panda.png',
-    soundPath: 'assets/sounds/panda.mp3',
-  ),
-  PuzzleImage(
-    name: 'Penguin',
-    assetPath: 'assets/animals/penguin.png',
-    soundPath: 'assets/sounds/penguin.mp3',
-  ),
-  PuzzleImage(
-    name: 'Tiger',
-    assetPath: 'assets/animals/tiger.png',
-    soundPath: 'assets/sounds/tiger.mp3',
-  ),
+    name: 'Koala',
+    assetPath: 'assets/figuras/tiburon.png',
+    soundPath: 'assets/sounds/clika.mp3',
+  )
 ];
 
 Future<Image> decodeAsset(ByteData bytes) async {

@@ -18,7 +18,7 @@ class AudioRepositoryImpl implements AudioRepository {
 
     _isPlaying = true;
     final duration = await _player.setAsset(
-      'assets/sounds/pull-out.mp3',
+      'assets/sounds/clics.mp3',
     );
     if (duration != null) {
       unawaited(_player.play());

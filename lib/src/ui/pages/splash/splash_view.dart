@@ -3,11 +3,12 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:lottie/lottie.dart';
 import 'package:particles_flutter/particles_flutter.dart';
 import 'package:puzle_hack/src/data/repositories_impl/images_repository_impl.dart';
 import 'package:puzle_hack/src/ui/menuprin/menu.dart';
- import 'package:puzle_hack/src/ui/pages/splash/circle_transition_clipper.dart';
-  import 'package:puzle_hack/src/ui/utils/responsive.dart';
+import 'package:puzle_hack/src/ui/pages/splash/circle_transition_clipper.dart';
+import 'package:puzle_hack/src/ui/utils/responsive.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({Key? key}) : super(key: key);
@@ -48,7 +49,7 @@ class _SplashViewState extends State<SplashView>
 
   void _goToGame() {
     final route = PageRouteBuilder(
-      pageBuilder: (_, animation, secondaryAnimation) =>   MenuPrincipal(),
+      pageBuilder: (_, animation, secondaryAnimation) => MenuPrincipal(),
       //gameview
       transitionDuration: const Duration(milliseconds: 3000),
       transitionsBuilder: (
@@ -115,79 +116,90 @@ class _SplashViewState extends State<SplashView>
     final half = options.length ~/ 2;
     final responsive = Responsive.of(context);
 
-    return Scaffold(
-      //TEMA OSCURO O LIGHT
-      backgroundColor: Colors.blue[200],
-      body: SizedBox(
-        width: double.infinity,
-        height: double.infinity,
-        child: OrientationBuilder(
-          builder: (_, orientation) {
-            final isPortrait = orientation == Orientation.portrait;
+    return Container(
+      decoration: BoxDecoration(
+          gradient: LinearGradient(
+              begin: Alignment.bottomCenter,
+              end: Alignment.centerRight,
+              stops: [0.2, 0.9],
+              colors: [Colors.lightBlueAccent, Colors.blue])),
+      child: Scaffold(
+        body: SizedBox(
+          width: double.infinity,
+          height: double.infinity,
+          child: OrientationBuilder(
+            builder: (_, orientation) {
+              final isPortrait = orientation == Orientation.portrait;
 
-            final size = responsive.dp(isPortrait ? 10 : 7);
-            final bottom = responsive.hp(30);
-            final titleSize = responsive.dp(5);
+              final size = responsive.dp(isPortrait ? 10 : 7);
+              final bottom = responsive.hp(30);
+              final titleSize = responsive.dp(7);
 
-            return AnimatedBuilder(
-              animation: _animation,
-              builder: (_, jungle) {
-                final offset = _animation.value;
-                final dx = -size * 0.3 - (size * 0.7 - offset * size * 0.7);
+              return AnimatedBuilder(
+                animation: _animation,
+                builder: (_, jungle) {
+                  final offset = _animation.value;
+                  final dx = -size * 0.3 - (size * 0.7 - offset * size * 0.7);
 
-                return Stack(
-                  children: [
-                    CircularParticle(
-                      key: UniqueKey(),
-                      awayRadius: 80,
-                      numberOfParticles: 100,
-                      speedOfParticles: 1,
-                      height: screenHeight,
-                      width: screenWidth,
-                      onTapAnimation: true,
-                      particleColor: Colors.white.withAlpha(150),
-                      awayAnimationDuration: Duration(milliseconds: 600),
-                      maxParticleSize: 5,
-                      isRandSize: true,
-                      isRandomColor: true,
-                    
-                      randColorList: [
-                     
-                         Colors.blue,
+                  return Stack(
+                    children: [
+                      CircularParticle(
+                        key: UniqueKey(),
+                        awayRadius: 80,
+                        numberOfParticles: 100,
+                        speedOfParticles: 1,
+                        height: screenHeight,
+                        width: screenWidth,
+                        onTapAnimation: true,
+                        particleColor: Colors.white.withAlpha(50),
+                        awayAnimationDuration: Duration(milliseconds: 600),
+                        maxParticleSize: 5,
+                        isRandSize: true,
+                        isRandomColor: true,
+
+                        randColorList: [
+                          Colors.blue,
                           Colors.green,
-                      ],
-                      awayAnimationCurve: Curves.bounceInOut,
-                      enableHover: true,
-                      hoverColor: Colors.white,
-                      hoverRadius: 50,
-                      connectDots: true, //not recommended
-                    ),
-                 
-                    Center(
-                      child: Transform.scale(
-                        scale: offset.clamp(0.5, 1),
-                        child: Opacity(
-                          opacity: offset.clamp(0, 1),
-                          child: Text(
-                            "PUZZLE \n MANIA",
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: titleSize,
-                              fontWeight: FontWeight.bold,
-                              height: 0.9,
+                        ],
+                        awayAnimationCurve: Curves.bounceInOut,
+                        enableHover: true,
+                        hoverColor: Colors.blueAccent,
+                        hoverRadius: 50,
+
+                        connectDots: true, //not recommended
+                      ),
+                      Center(
+                        child: Lottie.asset(
+                          'assets/lottie/puzlee.json',
+                          width: 200,
+                          height: 200,
+                        ),
+                      ),
+                      Center(
+                        child: Transform.scale(
+                          scale: offset.clamp(0.5, 1),
+                          child: Opacity(
+                            opacity: offset.clamp(0, 1),
+                            child: Text(
+                              "PUZZLE \n MANIA",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'Viga-Regular',
+                                fontSize: titleSize,
+                                fontWeight: FontWeight.bold,
+                                height: 0.9,
+                              ),
                             ),
                           ),
                         ),
                       ),
-                    ),
-                
-                    
-                  ],
-                );
-              },
-          
-            );
-          },
+                    ],
+                  );
+                },
+              );
+            },
+          ),
         ),
       ),
     );
