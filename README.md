@@ -10,6 +10,7 @@ Se puede usar las telcas "A","S","D","W" o las teclas arriba,abajo, izquierda, d
 
 Interfaz agradable e intuitiva para que todas las personas puedan disfrutar.
 
+Construido para Movil (Android, iOS) , Web, MacOS, Windows
 
 ![Alt text](git1.webp)
 ![Alt text](git2.webp)
