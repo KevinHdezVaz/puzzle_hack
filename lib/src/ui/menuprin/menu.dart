@@ -3,6 +3,7 @@ import 'package:lottie/lottie.dart';
 import 'package:puzle_hack/generated/l10n.dart';
 import 'package:puzle_hack/src/ui/pages/game/vista_juego.dart';
 import 'package:puzle_hack/src/ui/pages/game/widgets/%20customSolumath2.dart';
+import 'package:puzle_hack/src/ui/pages/splash/circle_transition_clipper.dart';
 
 import '../custom_dialog_coffe.dart';
 
@@ -139,11 +140,9 @@ class _MenuPrincipalState extends State<MenuPrincipal> {
                        onTap: () {
                       if (data.title == S.current.jugar) {
 
-                        
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => GameView()),
-                        );
+                       
+                          
+                           _goToGame();
                       } else if (data.title == S.current.comosejuerga) {
                         
                           showDialog(
@@ -151,9 +150,9 @@ class _MenuPrincipalState extends State<MenuPrincipal> {
                                   builder: (BuildContext context) {
                                     return CustomSolumath(
                                       title:
-                                          S.current.mueve,
+                                          S.current.mover,
                                       descriptions:
-                                        S.current.esdemasiadofacil+ " 🇲🇽❤",
+                                      S.current.estoes+"🇲🇽❤",
                                       text: S.current.salir,
                                     );
                                   });
@@ -172,9 +171,41 @@ class _MenuPrincipalState extends State<MenuPrincipal> {
         ],
       ),
     );
+ 
   }
-}
+void _goToGame() {
+    final route = PageRouteBuilder(
+      pageBuilder: (_, animation, secondaryAnimation) => GameView(),
+      //gameview
+      transitionDuration: const Duration(milliseconds: 3000),
+      transitionsBuilder: (
+        context,
+        animation,
+        secondaryAnimation,
+        child,
+      ) {
+        final size = MediaQuery.of(context).size;
 
+        final radiusTween = Tween<double>(
+          begin: 0.0,
+          end: size.height,
+        );
+
+        return ClipPath(
+          clipper: CircleTransitionClipper(
+            center: Offset(
+              size.width * 0.5,
+              size.height * 0.5,
+            ),
+            radius: animation.drive(radiusTween).value,
+          ),
+          child: child,
+        );
+      },
+    );
+    Navigator.pushReplacement(context, route);
+  }
+} 
 class Items {
   String title;
   String img;

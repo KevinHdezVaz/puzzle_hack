@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:puzle_hack/generated/l10n.dart';
 import 'package:puzle_hack/src/ui/global/widgets/up_to_down.dart';
 import 'package:puzle_hack/src/ui/utils/colors.dart';
@@ -17,7 +18,7 @@ Future<bool> showConfirmDialog(BuildContext context) async {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
             ),
-            color: isDarkMode ? darkColor : lightColor,
+            color:  lightColor,
             child: SizedBox(
               width: 320,
               child: Column(
@@ -29,15 +30,16 @@ Future<bool> showConfirmDialog(BuildContext context) async {
                     ),
                     child: Transform.scale(
                       scale: 1.5,
-                      child: Image.asset(
-                        'assets/images/relax-dash.png',
+                      child: Lottie.asset(
+                        'assets/lottie/cube.json',
                         width: 200,
                       ),
                     ),
                   ),
                   Text(
-                    texts.are_you_sure,
+                    texts.restart,
                     style: const TextStyle(
+                      color: Colors.red,
                       fontSize: 25,
                     ),
                   ),
@@ -46,7 +48,7 @@ Future<bool> showConfirmDialog(BuildContext context) async {
                       horizontal: 20,
                     ),
                     child: Text(
-                      texts.dou_you_really,
+                      texts.restarpuzzle,
                       style: const TextStyle(
                         fontSize: 16,
                       ),
@@ -59,11 +61,13 @@ Future<bool> showConfirmDialog(BuildContext context) async {
                     children: [
                       Expanded(
                         child: TextButton(
+                         
                           onPressed: () => Navigator.pop(
                             context,
                             true,
                           ),
                           child: Text(texts.yes),
+                      
                         ),
                       ),
                       Container(

@@ -102,10 +102,7 @@ class _PuzzleOptionsState extends State<PuzzleOptions>
                         gradient: LinearGradient(
                           begin: Alignment.topRight,
                           end: Alignment.bottomLeft,
-                          colors: [
-                            Colors.white,
-                            Colors.blue.withAlpha(100)
-                          ],
+                          colors: [Colors.white, Colors.blue.withAlpha(100)],
                         ),
                         border: Border.all(color: Colors.blueAccent),
                         boxShadow: [
@@ -135,52 +132,38 @@ class _PuzzleOptionsState extends State<PuzzleOptions>
                     ),
                   ),
                 );
-                
               },
               itemCount: puzzleOptions.length,
             ),
           ),
         ),
-      
         Align(
-            alignment: Alignment.bottomCenter,
-            
-            child: SmoothPageIndicator(
-              
-              controller: _pageController, 
-              count: puzzleOptions.length,
-         
-              effect:  ExpandingDotsEffect(  
-      spacing:  12.0,  
-      radius:  20.0,  
-      dotWidth:  24.0,   
-      
-      dotHeight:  18.0,  
-      paintStyle:  PaintingStyle.stroke,  
-      strokeWidth:  2,  
-      dotColor:  Colors.cyan.shade200,  
-      activeDotColor:  Colors.lightBlue  
-   ),  
-              onDotClicked: (index) {
-                _pageController.animateToPage(
-                  index,
-                  duration: const Duration(milliseconds: 300),
-                  curve: Curves.fastLinearToSlowEaseIn,
-                );
-              },
-            ),
-        
+          alignment: Alignment.bottomCenter,
+          child: SmoothPageIndicator(
+            controller: _pageController,
+            count: puzzleOptions.length,
+            effect: ExpandingDotsEffect(
+                spacing: 12.0,
+                radius: 20.0,
+                dotWidth: 24.0,
+                dotHeight: 18.0,
+                paintStyle: PaintingStyle.fill,
+                strokeWidth: 2,
+                dotColor: Colors.orangeAccent.withAlpha(100),
+                activeDotColor: Colors.orange),
+                onDotClicked: (index) {
+              _pageController.animateToPage(
+                index,
+                duration: const Duration(milliseconds: 300),
+                curve: Curves.fastLinearToSlowEaseIn,
+              );
+            },
+          ),
         ),
         Align(
           alignment: Alignment.topCenter,
-          child: 
-            
-             Icon(
-              Icons.arrow_drop_down_circle,
-              size: 50,
-              color: Colors.amber
-            ),
-          
+          child:
+              Icon(Icons.arrow_drop_down_circle, size: 50, color: Colors.orange),
         ),
       ],
     );

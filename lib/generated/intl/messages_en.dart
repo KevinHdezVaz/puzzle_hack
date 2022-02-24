@@ -28,15 +28,21 @@ class MessageLookup extends MessageLookupByLibrary {
         "comosejuerga": MessageLookupByLibrary.simpleMessage("How to \nplay?"),
         "completed": MessageLookupByLibrary.simpleMessage(
             "You have completed the puzzle"),
-        "dou_you_really": MessageLookupByLibrary.simpleMessage(
-            "Do you really want to restart the current puzzle"),
+        "estoes": MessageLookupByLibrary.simpleMessage(
+            "It’s too easy to playa, you just have to accommodate the chips from the first number to the last with the least number of moves and time possible!"),
+        "flutter": MessageLookupByLibrary.simpleMessage(
+            "Have fun while you play, do it with flutter!"),
         "jugar": MessageLookupByLibrary.simpleMessage("Play"),
         "movements": MessageLookupByLibrary.simpleMessage("moves"),
+        "mover": MessageLookupByLibrary.simpleMessage(
+            "MOVE THE TOKENS UNTIL YOU WIN!"),
         "no": MessageLookupByLibrary.simpleMessage("NO"),
         "ok": MessageLookupByLibrary.simpleMessage("OK"),
         "privacy": MessageLookupByLibrary.simpleMessage(
             "This is a free non-profit game, the game does not collect information of any kind from users or their traffic, it does not need internet."),
         "redes": MessageLookupByLibrary.simpleMessage("Social media"),
+        "restarpuzzle": MessageLookupByLibrary.simpleMessage(
+            "Do you want to restart the puzzle?"),
         "restart": MessageLookupByLibrary.simpleMessage("Restart"),
         "salir": MessageLookupByLibrary.simpleMessage("Back"),
         "start": MessageLookupByLibrary.simpleMessage("START"),

@@ -50,66 +50,6 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Are you sure?`
-  String get are_you_sure {
-    return Intl.message(
-      'Are you sure?',
-      name: 'are_you_sure',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `YES`
-  String get yes {
-    return Intl.message(
-      'YES',
-      name: 'yes',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `NO`
-  String get no {
-    return Intl.message(
-      'NO',
-      name: 'no',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Do you really want to restart the current puzzle`
-  String get dou_you_really {
-    return Intl.message(
-      'Do you really want to restart the current puzzle',
-      name: 'dou_you_really',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `moves`
-  String get movements {
-    return Intl.message(
-      'moves',
-      name: 'movements',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Restart`
-  String get restart {
-    return Intl.message(
-      'Restart',
-      name: 'restart',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `START`
   String get start {
     return Intl.message(
@@ -180,6 +120,66 @@ class S {
     );
   }
 
+  /// `Are you sure?`
+  String get are_you_sure {
+    return Intl.message(
+      'Are you sure?',
+      name: 'are_you_sure',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `YES`
+  String get yes {
+    return Intl.message(
+      'YES',
+      name: 'yes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `NO`
+  String get no {
+    return Intl.message(
+      'NO',
+      name: 'no',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Do you want to restart the puzzle?`
+  String get restarpuzzle {
+    return Intl.message(
+      'Do you want to restart the puzzle?',
+      name: 'restarpuzzle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `moves`
+  String get movements {
+    return Intl.message(
+      'moves',
+      name: 'movements',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Restart`
+  String get restart {
+    return Intl.message(
+      'Restart',
+      name: 'restart',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `How to \nplay?`
   String get comosejuerga {
     return Intl.message(
@@ -205,6 +205,36 @@ class S {
     return Intl.message(
       'Back',
       name: 'salir',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `MOVE THE TOKENS UNTIL YOU WIN!`
+  String get mover {
+    return Intl.message(
+      'MOVE THE TOKENS UNTIL YOU WIN!',
+      name: 'mover',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `It’s too easy to playa, you just have to accommodate the chips from the first number to the last with the least number of moves and time possible!`
+  String get estoes {
+    return Intl.message(
+      'It’s too easy to playa, you just have to accommodate the chips from the first number to the last with the least number of moves and time possible!',
+      name: 'estoes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Have fun while you play, do it with flutter!`
+  String get flutter {
+    return Intl.message(
+      'Have fun while you play, do it with flutter!',
+      name: 'flutter',
       desc: '',
       args: [],
     );

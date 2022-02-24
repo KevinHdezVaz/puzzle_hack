@@ -1,10 +1,4 @@
-{
-    "are_you_sure": "Are you sure?",
-    "yes": "YES",
-    "no": "NO",
-    "dou_you_really": "Do you really want to restart the current puzzle",
-    "movements": "moves",
-    "restart": "Restart",
+{ 
     "start": "START",
     "completed": "You have completed the puzzle",
     "time": "Time",
@@ -12,12 +6,20 @@
     "privacy":"This is a free non-profit game, the game does not collect information of any kind from users or their traffic, it does not need internet.",
     "back_to_game":"back to the game",
     "jugar": "Play",
-    "comosejuerga": "How to \nplay?",
+   
+    "are_you_sure": "Are you sure?",
+    "yes": "YES",
+    "no": "NO",
+    "restarpuzzle": "Do you want to restart the puzzle?",
+    "movements": "moves",
+    "restart": "Restart",
+     "comosejuerga": "How to \nplay?",
     "redes": "Social media",
     "salir": "Back",
-    "ok": "OK",
-    "ok": "OK"
-    
+    "mover": "MOVE THE TOKENS UNTIL YOU WIN!",
+    "estoes": "It’s too easy to playa, you just have to accommodate the chips from the first number to the last with the least number of moves and time possible!"
+   , "flutter": "Have fun while you play, do it with flutter!"
+
 
 
 

@@ -2,8 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:puzle_hack/generated/l10n.dart';
 import 'package:puzle_hack/src/domain/models/move_to.dart';
 import 'package:puzle_hack/src/ui/pages/game/controller/juego_controlador.dart';
+import 'package:puzle_hack/src/ui/pages/game/widgets/%20customSolumath2.dart';
 import 'package:puzle_hack/src/ui/pages/game/widgets/fondo.dart';
 import 'package:puzle_hack/src/ui/pages/game/widgets/barra_game.dart';
 import 'package:puzle_hack/src/ui/pages/game/widgets/botones_game.dart';
@@ -79,13 +81,15 @@ class GameView extends StatelessWidget {
                           child: IconButton(
                             icon: Icon(Icons.info),
                             onPressed: () {
-                              showDialog(
+                                showDialog(
                                   context: context,
                                   builder: (BuildContext context) {
-                                    return CustomCoffe(
-                                      text: "asdfasd",
-                                      title: "SDFGDS",
-                                      descriptions: "SDFGDSFG",
+                                    return CustomSolumath(
+                                      title:
+                                          "FLUTTER PUZZLE HACK",
+                                      descriptions:
+                                      S.current.flutter,
+                                      text: S.current.salir,
                                     );
                                   });
                             },

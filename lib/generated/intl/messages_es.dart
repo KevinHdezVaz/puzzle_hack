@@ -29,15 +29,21 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("¿Como se \njuega?"),
         "completed": MessageLookupByLibrary.simpleMessage(
             "Has completado el rompecabezas"),
-        "dou_you_really": MessageLookupByLibrary.simpleMessage(
-            "Realmente quieres reiniciar el rompecabezas actual"),
+        "estoes": MessageLookupByLibrary.simpleMessage(
+            "¡Es demasiado fácil de jugar, solo tienes que acomodar las fichas desde el primer número hasta el último con el menor número de movimientos y tiempo posible!"),
+        "flutter": MessageLookupByLibrary.simpleMessage(
+            "Diviertete mientras juegas, hazlo con flutter!"),
         "jugar": MessageLookupByLibrary.simpleMessage("Jugar"),
         "movements": MessageLookupByLibrary.simpleMessage("Movimientos"),
+        "mover": MessageLookupByLibrary.simpleMessage(
+            "¡MUEVE LAS FICHAS HASTA GANAR!"),
         "no": MessageLookupByLibrary.simpleMessage("NO"),
-        "ok": MessageLookupByLibrary.simpleMessage("OK"),
+        "ok": MessageLookupByLibrary.simpleMessage("ACEPTAR"),
         "privacy": MessageLookupByLibrary.simpleMessage(
             "Este es un juego gratuito sin fines de lucro, el juego no recolecta información de ningun tipo de los usuarios ni tampoco de su trafico, no necesita internet."),
         "redes": MessageLookupByLibrary.simpleMessage("Redes \nsociales"),
+        "restarpuzzle":
+            MessageLookupByLibrary.simpleMessage("¿Desea reiniciar el puzzle?"),
         "restart": MessageLookupByLibrary.simpleMessage("Reiniciar"),
         "salir": MessageLookupByLibrary.simpleMessage("Regresar"),
         "start": MessageLookupByLibrary.simpleMessage("INICIAR"),

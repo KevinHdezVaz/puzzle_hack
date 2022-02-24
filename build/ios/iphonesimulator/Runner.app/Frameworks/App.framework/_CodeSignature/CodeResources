@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		v+FIVv2H2yXpe0+t+cMYmx0pwRs=
+		5U+7uaaZL0d21eLpogra5KpIPjQ=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -19,10 +19,6 @@
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
 		UeHKFAOp9HJ+71cpVzMeK/gHDas=
-		</data>
-		<key>flutter_assets/assets/.DS_Store</key>
-		<data>
-		86oNRQRsmClK1HQx9aRot/fCk4I=
 		</data>
 		<key>flutter_assets/assets/brain2.json</key>
 		<data>
@@ -156,14 +152,6 @@
 		<data>
 		+I2nwEosSeCYBOR+PniU+xAgA8I=
 		</data>
-		<key>flutter_assets/assets/sounds/clic.mp3</key>
-		<data>
-		w9aw+Q8vVqfFOIAmJPS7tZFvs5k=
-		</data>
-		<key>flutter_assets/assets/sounds/clicgame.mp3</key>
-		<data>
-		h2Z8YuHTQ5POLMYrecr89VcJHoI=
-		</data>
 		<key>flutter_assets/assets/sounds/clics.mp3</key>
 		<data>
 		oVA6ue5ARUvYH4pSvFtQrMBqAdU=
@@ -171,10 +159,6 @@
 		<key>flutter_assets/assets/sounds/clika.mp3</key>
 		<data>
 		njasNOAg3Yop3WHHd+MMzlyaeo0=
-		</data>
-		<key>flutter_assets/assets/sounds/pull-out.mp3</key>
-		<data>
-		Y5F8UnWw56aLh4GzyAOAO3bNguo=
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -186,7 +170,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		UwfqkDDzBOS7XU4W35knLhSd68w=
+		bTWXUx2DuLZXHrZU21iDXytP83w=
 		</data>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<data>
@@ -199,11 +183,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v+FIVv2H2yXpe0+t+cMYmx0pwRs=
+			5U+7uaaZL0d21eLpogra5KpIPjQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			QCGCgGon56z259c+mLDYxz332Lk5Z0kaWR47GM3zk6I=
+			cMqeiWV0bzIiECZSYwVKFtk/Wq6C7rOKqB7E25Dfv/Y=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -591,28 +575,6 @@
 			tIXreBOWWyEo6mvH+RdFwkep1NmPJtTGmuU4JBGOQsk=
 			</data>
 		</dict>
-		<key>flutter_assets/assets/sounds/clic.mp3</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			w9aw+Q8vVqfFOIAmJPS7tZFvs5k=
-			</data>
-			<key>hash2</key>
-			<data>
-			TLrXf/IcLV99/X8OIEWzg4jJrsJz8xCwsthfDfhiCKc=
-			</data>
-		</dict>
-		<key>flutter_assets/assets/sounds/clicgame.mp3</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			h2Z8YuHTQ5POLMYrecr89VcJHoI=
-			</data>
-			<key>hash2</key>
-			<data>
-			R7FXpiQdp24kvWkppBOHcaUp0fjFcqSELRqC33czDnM=
-			</data>
-		</dict>
 		<key>flutter_assets/assets/sounds/clics.mp3</key>
 		<dict>
 			<key>hash</key>
@@ -633,17 +595,6 @@
 			<key>hash2</key>
 			<data>
 			kXNTMLkP0PXaFPlKSN8wN0cTNg5NRYEAp0AksOSBPwk=
-			</data>
-		</dict>
-		<key>flutter_assets/assets/sounds/pull-out.mp3</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Y5F8UnWw56aLh4GzyAOAO3bNguo=
-			</data>
-			<key>hash2</key>
-			<data>
-			DTGdqBf/lzjaw6mK/k01jHX8YdpH0weVkwH8M2yzoMI=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -672,11 +623,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UwfqkDDzBOS7XU4W35knLhSd68w=
+			bTWXUx2DuLZXHrZU21iDXytP83w=
 			</data>
 			<key>hash2</key>
 			<data>
-			xds+bPML2W5rpFKtUaLDLFF9SWqa/mM1VcUAGCa32rk=
+			msud+sVr1tUzLCDpQdc4Js1+mNmqP7kz/4hXKzg5TIk=
 			</data>
 		</dict>
 		<key>flutter_assets/vm_snapshot_data</key>

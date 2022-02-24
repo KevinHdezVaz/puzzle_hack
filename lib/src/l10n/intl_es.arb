@@ -1,13 +1,13 @@
 {
-    "are_you_sure": "¿Estás seguro?",
-    "yes": "SI",
-    "no": "NO",
-    "dou_you_really": "Realmente quieres reiniciar el rompecabezas actual",
+ 
+    "restarpuzzle": "¿Desea reiniciar el puzzle?",
     "movements": "Movimientos",
     "restart": "Reiniciar",
     "start": "INICIAR", 
     "completed": "Has completado el rompecabezas",
-    "time": "Tiempo",
+    "are_you_sure": "¿Estás seguro?",
+    "yes": "SI",
+    "no": "NO","time": "Tiempo",
     "ok": "ACEPTAR",
     "privacy":"Este es un juego gratuito sin fines de lucro, el juego no recolecta información de ningun tipo de los usuarios ni tampoco de su trafico, no necesita internet.",
     "back_to_game":"Regresar al juego",
@@ -15,7 +15,11 @@
     "comosejuerga": "¿Como se \njuega?",
     "redes": "Redes \nsociales",
     "salir": "Regresar",
-    "ok": "OK",
-    "ok": "OK",
-    "ok": "OK"
+    
+    "mover": "¡MUEVE LAS FICHAS HASTA GANAR!",
+    "estoes": "¡Es demasiado fácil de jugar, solo tienes que acomodar las fichas desde el primer número hasta el último con el menor número de movimientos y tiempo posible!",
+    "flutter": "Diviertete mientras juegas, hazlo con flutter!"
+     
+
+
 }
