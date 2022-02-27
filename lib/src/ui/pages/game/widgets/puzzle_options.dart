@@ -163,7 +163,7 @@ class _PuzzleOptionsState extends State<PuzzleOptions>
         Align(
           alignment: Alignment.topCenter,
           child:
-              Icon(Icons.arrow_drop_down_circle, size: 50, color: Colors.orange),
+              Icon(Icons.arrow_drop_down_circle, size: 50, color: Colors.orange)                                                                                                                                                                                                                                                                                                                             ,
         ),
       ],
     );
