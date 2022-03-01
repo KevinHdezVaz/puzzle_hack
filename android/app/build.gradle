@@ -67,14 +67,16 @@ android {
          }
      }
 
-      buildTypes {
+     buildTypes {
         release {
            minifyEnabled true
-            shrinkResources true 
-            useProguard true 
+            shrinkResources true// to shrink your image resource read more at https://developer.android.com/studio/build/shrink-code
+            useProguard true// enables progaurd
+       
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
 
+     
             
         }
     }
