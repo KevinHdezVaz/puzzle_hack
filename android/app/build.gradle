@@ -32,7 +32,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    compileSdkVersion = 29
+    compileSdkVersion = 31
  
 
 
@@ -58,20 +58,24 @@ android {
         versionName flutterVersionName
     }
 
-    signingConfigs {
-        release {
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
-            storePassword keystoreProperties['storePassword']
-        }
-    }
+     signingConfigs {
+          release {
+              storeFile file("upload-keystore2.jks")
+              storePassword 'Elmejor_10'
+              keyAlias 'upload2'
+              keyPassword 'Elmejor_10'
+         }
+     }
 
-    buildTypes {
+      buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
+           minifyEnabled true
+            shrinkResources true 
+            useProguard true 
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
+
+            
         }
     }
 }

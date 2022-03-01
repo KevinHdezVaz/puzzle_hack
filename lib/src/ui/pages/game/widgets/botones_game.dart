@@ -29,24 +29,32 @@ class GameButtons extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          MyTextIconButton(
-            height: buttonHeight,
-            onPressed: () => _reset(context),
-            icon: const Icon(
-              Icons.replay_rounded,
+          Container(
+             decoration: BoxDecoration(
+              color: Colors.blue.withAlpha(500),
+              borderRadius: BorderRadius.circular(30),
             ),
-            label: state.status == GameStatus.created ? S.current.start : S.current.restart,
+            child: MyTextIconButton(
+              height: buttonHeight,
+              onPressed: () => _reset(context),
+              icon: const Icon(
+                
+                Icons.not_started_outlined,
+              ),
+
+              label: state.status == GameStatus.created ? S.current.start : S.current.restart,
+            ),
           ),
           const SizedBox(width: 20),
           Container(
             decoration: BoxDecoration(
-              color: lightColor.withOpacity(isDarkMode ? 0.3 : 1),
+              color: Colors.blue.withAlpha(50),
               borderRadius: BorderRadius.circular(30),
             ),
             child: DropdownButtonHideUnderline(
               child: DropdownButton<int>(
                 itemHeight: buttonHeight,
-                dropdownColor: (isDarkMode ? darkColor : lightColor).withOpacity(0.9),
+                dropdownColor: (  lightColor).withOpacity(0.9),
                 borderRadius: BorderRadius.circular(30),
                 icon: Padding(
                   padding: const EdgeInsets.only(
@@ -56,11 +64,11 @@ class GameButtons extends StatelessWidget {
                     angle: 90 * pi / 180,
                     child: Icon(
                       Icons.arrow_forward_ios_rounded,
-                      color: isDarkMode ? Colors.white : darkColor,
+                      color:  darkColor,
                     ),
                   ),
                 ),
-                items: [3, 4, 5, 6]
+                items: [3, 4, 5 ]
                     .map(
                       (e) => DropdownMenuItem(
                         child: Padding(

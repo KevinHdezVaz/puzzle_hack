@@ -220,10 +220,10 @@ class S {
     );
   }
 
-  /// `It’s too easy to playa, you just have to accommodate the chips from the first number to the last with the least number of moves and time possible!`
+  /// `It’s too easy to play, you just have to accommodate the chips from the first number to the last with the least number of moves and time possible!`
   String get estoes {
     return Intl.message(
-      'It’s too easy to playa, you just have to accommodate the chips from the first number to the last with the least number of moves and time possible!',
+      'It’s too easy to play, you just have to accommodate the chips from the first number to the last with the least number of moves and time possible!',
       name: 'estoes',
       desc: '',
       args: [],
@@ -235,6 +235,16 @@ class S {
     return Intl.message(
       'Have fun while you play, do it with flutter!',
       name: 'flutter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1vs1`
+  String get unouno {
+    return Intl.message(
+      '1vs1',
+      name: 'unouno',
       desc: '',
       args: [],
     );

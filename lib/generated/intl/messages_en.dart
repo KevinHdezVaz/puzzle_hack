@@ -29,7 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "completed": MessageLookupByLibrary.simpleMessage(
             "You have completed the puzzle"),
         "estoes": MessageLookupByLibrary.simpleMessage(
-            "It’s too easy to playa, you just have to accommodate the chips from the first number to the last with the least number of moves and time possible!"),
+            "It’s too easy to play, you just have to accommodate the chips from the first number to the last with the least number of moves and time possible!"),
         "flutter": MessageLookupByLibrary.simpleMessage(
             "Have fun while you play, do it with flutter!"),
         "jugar": MessageLookupByLibrary.simpleMessage("Play"),
@@ -47,6 +47,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "salir": MessageLookupByLibrary.simpleMessage("Back"),
         "start": MessageLookupByLibrary.simpleMessage("START"),
         "time": MessageLookupByLibrary.simpleMessage("Time"),
+        "unouno": MessageLookupByLibrary.simpleMessage("1vs1"),
         "yes": MessageLookupByLibrary.simpleMessage("YES")
       };
 }

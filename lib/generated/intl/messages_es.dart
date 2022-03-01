@@ -48,6 +48,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "salir": MessageLookupByLibrary.simpleMessage("Regresar"),
         "start": MessageLookupByLibrary.simpleMessage("INICIAR"),
         "time": MessageLookupByLibrary.simpleMessage("Tiempo"),
+        "unouno": MessageLookupByLibrary.simpleMessage("1vs1"),
         "yes": MessageLookupByLibrary.simpleMessage("SI")
       };
 }

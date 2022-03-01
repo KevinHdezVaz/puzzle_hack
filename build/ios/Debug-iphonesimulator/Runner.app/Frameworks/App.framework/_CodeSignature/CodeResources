@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		5U+7uaaZL0d21eLpogra5KpIPjQ=
+		fl+vwZFvAD5MobOww+kw0+5Rp5A=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		UeHKFAOp9HJ+71cpVzMeK/gHDas=
+		55ObBeR9SiZufs8H2wcDNWv3wmE=
 		</data>
 		<key>flutter_assets/assets/brain2.json</key>
 		<data>
@@ -124,6 +124,10 @@
 		<data>
 		3Tya4duBcmNfn/Md/nURWes9ekE=
 		</data>
+		<key>flutter_assets/assets/images/multijugador.png</key>
+		<data>
+		jrbFaQAK605ySdVrpJzj5i7CNiQ=
+		</data>
 		<key>flutter_assets/assets/images/redes.png</key>
 		<data>
 		sy1Z2VXhgdmqF9GuQfNJBPqnx00=
@@ -140,9 +144,17 @@
 		<data>
 		Wq/v4CUAcQrcI2EiZ4dYty18ttU=
 		</data>
+		<key>flutter_assets/assets/lottie/abajo.json</key>
+		<data>
+		xSZHjrjvSXyyEzPTynb4Skdpz+I=
+		</data>
 		<key>flutter_assets/assets/lottie/brain2.json</key>
 		<data>
 		pB2BDTuJfZID5GFvsmYBlbOgNa4=
+		</data>
+		<key>flutter_assets/assets/lottie/cube.json</key>
+		<data>
+		qxEBIDD0zHQJGOxOEOTnb/8wsqg=
 		</data>
 		<key>flutter_assets/assets/lottie/ganador.json</key>
 		<data>
@@ -162,19 +174,19 @@
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
-		33xe6rFwPlxRnZOgZWsODADpUI4=
+		zg6AEuOKM55BH/RKiXqZqsORXXE=
 		</data>
 		<key>flutter_assets/isolate_snapshot_data</key>
 		<data>
-		/0AmkjULIIaL/3YHuPipBTwKbBU=
+		/8YINIQYa2MGeFNAjTVvMEJmvKA=
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		bTWXUx2DuLZXHrZU21iDXytP83w=
+		IZy6JhX77vIF/Ek5pImVjADX7aA=
 		</data>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<data>
-		GSdeSSVKlMZc4dGp6K8FmNf4taU=
+		kzk1wp8qHso+VmYD8lJ5+HidZCw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -183,11 +195,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5U+7uaaZL0d21eLpogra5KpIPjQ=
+			fl+vwZFvAD5MobOww+kw0+5Rp5A=
 			</data>
 			<key>hash2</key>
 			<data>
-			cMqeiWV0bzIiECZSYwVKFtk/Wq6C7rOKqB7E25Dfv/Y=
+			CMULipWu29y83G+fyZuDcH0ZIJ14dl+QFe+iMHvYpBI=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -205,11 +217,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UeHKFAOp9HJ+71cpVzMeK/gHDas=
+			55ObBeR9SiZufs8H2wcDNWv3wmE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ly2fL5QPH809iKwTs9V27YalYu43itMN4lQUhTXdTLM=
+			hob/3Jp0rcJsy18N8KP5y+ZydppgiS08QGm90xPbR/U=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/brain2.json</key>
@@ -498,6 +510,17 @@
 			pfea0HxX6YdEqpeNgwylaKUAzDrKf9HqtkZLlsQ9t/E=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/images/multijugador.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jrbFaQAK605ySdVrpJzj5i7CNiQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			MiRPbEJHbypp4FLdlPSQhZ3IkzsVy6dTtdOkKAI3ysc=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/images/redes.png</key>
 		<dict>
 			<key>hash</key>
@@ -542,6 +565,17 @@
 			4ViTbh61NE5OvYLLsov0Q4jNOAKVNJ2NPop/OtG+FHU=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/lottie/abajo.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xSZHjrjvSXyyEzPTynb4Skdpz+I=
+			</data>
+			<key>hash2</key>
+			<data>
+			fShl5bKZHgZDy7MLskZcn7SUPtW6Q0abUegyXyrVbGU=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/lottie/brain2.json</key>
 		<dict>
 			<key>hash</key>
@@ -551,6 +585,17 @@
 			<key>hash2</key>
 			<data>
 			ArgVu0zTqNqTEpqWP6eWNWk39285Mw/lmJ2k/Q8uyRI=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/lottie/cube.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qxEBIDD0zHQJGOxOEOTnb/8wsqg=
+			</data>
+			<key>hash2</key>
+			<data>
+			rC8UhHEyxyE6K4Azcvp0UQ5INQm7icR2foKNXbf9pMQ=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/lottie/ganador.json</key>
@@ -601,44 +646,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			33xe6rFwPlxRnZOgZWsODADpUI4=
+			zg6AEuOKM55BH/RKiXqZqsORXXE=
 			</data>
 			<key>hash2</key>
 			<data>
-			0E0I/gLatnGI9y4elyWPSg2LWYJSPgLt6hMvgJD5+rQ=
+			TDYN86u6z4Vu7PyuO9xbDd/JyDIkfDi8ygoVQ6BE5ys=
 			</data>
 		</dict>
 		<key>flutter_assets/isolate_snapshot_data</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/0AmkjULIIaL/3YHuPipBTwKbBU=
+			/8YINIQYa2MGeFNAjTVvMEJmvKA=
 			</data>
 			<key>hash2</key>
 			<data>
-			hc8CBwWuRZrLFRWblPxaGJP1JqY7ZNQrutoUnQ0SxPE=
+			GiXyiy84iwHokWSI8cF+JQcEiNYwhXKJ6iopY39uCfo=
 			</data>
 		</dict>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bTWXUx2DuLZXHrZU21iDXytP83w=
+			IZy6JhX77vIF/Ek5pImVjADX7aA=
 			</data>
 			<key>hash2</key>
 			<data>
-			msud+sVr1tUzLCDpQdc4Js1+mNmqP7kz/4hXKzg5TIk=
+			Fhk0OfpF0QcBC+umB5ZXEUsFILELvo82SUOtCL+SyY4=
 			</data>
 		</dict>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GSdeSSVKlMZc4dGp6K8FmNf4taU=
+			kzk1wp8qHso+VmYD8lJ5+HidZCw=
 			</data>
 			<key>hash2</key>
 			<data>
-			w1vt9GEbbsxDdWG+Cns8O0OA28qaaHi/gkQ1bDZezNk=
+			SWudSb+UjFAbtsuvOflVVEzSQrNcWWVHTwGa+DH02Gs=
 			</data>
 		</dict>
 	</dict>

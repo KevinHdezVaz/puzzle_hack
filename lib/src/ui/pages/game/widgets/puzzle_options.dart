@@ -149,8 +149,8 @@ class _PuzzleOptionsState extends State<PuzzleOptions>
                 dotHeight: 18.0,
                 paintStyle: PaintingStyle.fill,
                 strokeWidth: 2,
-                dotColor: Colors.orangeAccent.withAlpha(100),
-                activeDotColor: Colors.orange),
+                dotColor: Colors.green.withAlpha(100),
+                activeDotColor: Colors.green),
                 onDotClicked: (index) {
               _pageController.animateToPage(
                 index,
@@ -163,7 +163,7 @@ class _PuzzleOptionsState extends State<PuzzleOptions>
         Align(
           alignment: Alignment.topCenter,
           child:
-              Icon(Icons.arrow_drop_down_circle, size: 50, color: Colors.orange)                                                                                                                                                                                                                                                                                                                             ,
+              Icon(Icons.arrow_drop_down_circle, size: 50, color: Colors.green)                                                                                                                                                                                                                                                                                                                            ,
         ),
       ],
     );

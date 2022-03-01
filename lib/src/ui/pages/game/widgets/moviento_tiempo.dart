@@ -14,6 +14,7 @@ class TimeAndMoves extends StatelessWidget {
   Widget build(BuildContext context) {
     const textStyle = TextStyle(
       fontSize: 25,
+      color: Colors.white,
       fontWeight: FontWeight.w600,
     );
 
@@ -30,38 +31,70 @@ class TimeAndMoves extends StatelessWidget {
             ValueListenableBuilder<int>(
               valueListenable: time,
               builder: (_, time, icon) {
-                return Row(
-                  children: [
-                    icon!,
-                    Text(
-                      " ${parseTime(time)}",
-                      style: textStyle,
+                return Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blue.withAlpha(200),
+                      borderRadius: BorderRadius.circular(10),
                     ),
-                  ],
+                    
+                    child: SizedBox(
+                      height: 50,
+                      width: 100,
+                      child: Row(
+                        children: [
+                          icon!,
+                          Text(
+                            " ${parseTime(time)}",
+                            style: textStyle,
+                          ),
+                        ],
+
+                        
+                      ),
+                    ),
+                  ),
                 );
               },
               child: const Icon(
-                PuzzleIcons.watch,
+                Icons.timer_outlined,
+                                color: Colors.white70,
                 size: 25,
               ),
             ),
+
+
+
             Selector<GameController, int>(
               builder: (_, moves, icon) {
-                return Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    icon!,
-                    const SizedBox(width: 5),
-                    Text(
-                      "$moves ${S.current.movements}",
-                      style: textStyle,
+                return Container(
+                  decoration: BoxDecoration(
+                    color: Colors.blue.withAlpha(200),
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  child: SizedBox(
+                     height: 50,
+                      width: 100,
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        icon!,
+                        const SizedBox(width: 20),
+                        Text(
+
+                          "$moves",
+                          style: textStyle,
+                        ),
+                      ],
                     ),
-                  ],
+                  ),
                 );
               },
               selector: (_, controller) => controller.state.moves,
               child: const Icon(
-                Icons.multiple_stop_rounded,
+                Icons.read_more_sharp,
+                color: Colors.white70,
                 size: 27,
               ),
             ),

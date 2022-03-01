@@ -5,8 +5,7 @@ import 'package:puzle_hack/src/domain/models/tile.dart';
 import 'package:puzle_hack/src/ui/pages/game/controller/estado_juego.dart';
 import 'package:puzle_hack/src/ui/utils/colors.dart';
 import 'package:puzle_hack/src/ui/utils/dark_mode_extension.dart';
-
-/// widget to render every tile in the puzzle
+ 
 class PuzzleTile extends StatefulWidget {
   final Tile tile;
   final Uint8List? imageTile;
@@ -152,7 +151,7 @@ class _PuzzleTileState extends State<PuzzleTile> with SingleTickerProviderStateM
                               left: 0,
                               top: 0,
                               child: Container(
-                                color: isDarkMode ? darkColor : lightColor,
+                                color:  lightColor,
                                 width: widget.size * 0.25,
                                 height: widget.size * 0.25,
                                 padding: const EdgeInsets.all(2),

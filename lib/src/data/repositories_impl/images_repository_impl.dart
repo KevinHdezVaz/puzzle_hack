@@ -43,6 +43,11 @@ const puzzleOptions = <PuzzleImage>[
     name: 'Koala',
     assetPath: 'assets/figuras/tiburon.png',
     soundPath: 'assets/sounds/clika.mp3',
+  ),
+  PuzzleImage(
+    name: '2vs2',
+    assetPath: 'assets/figuras/tiburon.png',
+    soundPath: 'assets/sounds/clika.mp3',
   )
 ];
 
@@ -55,7 +60,6 @@ Future<Image> decodeAsset(ByteData bytes) async {
 class SPlitData {
   final Image image;
   final int crossAxisCount;
-
   SPlitData(this.image, this.crossAxisCount);
 }
 
@@ -67,6 +71,8 @@ Future<List<Uint8List>> splitImage(SPlitData data) {
 
   for (int y = 0; y < crossAxisCount; y++) {
     for (int x = 0; x < crossAxisCount; x++) {
+
+      
       pieceList.add(
         Uint8List.fromList(
           encodePng(
@@ -96,9 +102,7 @@ class ImagesRepositoryImpl implements ImagesRepository {
     } else {
       final bytes = await rootBundle.load(asset);
 
-      /// use compute because theimage package is a pure dart package
-      /// so to avoid bad ui performance we do this task in a different
-      /// isolate
+   
       image = await compute(decodeAsset, bytes);
 
       final width = math.min(image.width, image.height);
