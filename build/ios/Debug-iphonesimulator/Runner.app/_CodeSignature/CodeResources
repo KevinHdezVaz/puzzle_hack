@@ -110,7 +110,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		XgnHO9v50mLLK1meM2+BvPx1WYQ=
+		GePCOBzzliRHuTZekxEPBZ9bRrY=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -118,11 +118,11 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		eAANAfJ6hv61Nww/OHG1QB9N3Qk=
+		LBaeZ3sMe6fDt0QuhFLNlwuqL50=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		fl+vwZFvAD5MobOww+kw0+5Rp5A=
+		RFyfwBaijlB2OeHCv51c6AvbWwM=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -212,10 +212,6 @@
 		<data>
 		FnBYwjddKytROcqQnrVxUP3yYwg=
 		</data>
-		<key>Frameworks/App.framework/flutter_assets/assets/images/dash.png</key>
-		<data>
-		sHYvv0NxOm7PGWNj2A0nag4E+98=
-		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/faons.png</key>
 		<data>
 		JXSzb/ipm9Cuf/8tvgflhRZQ1G0=
@@ -223,14 +219,6 @@
 		<key>Frameworks/App.framework/flutter_assets/assets/images/fas.png</key>
 		<data>
 		3gY1aZZi09MECShoGZUMvkrNDMI=
-		</data>
-		<key>Frameworks/App.framework/flutter_assets/assets/images/hero-dash.png</key>
-		<data>
-		2sriJdDQYTF8z5Vp+jUjpYfb540=
-		</data>
-		<key>Frameworks/App.framework/flutter_assets/assets/images/jungle.png</key>
-		<data>
-		a2IV9MWGbQEPsHzNd+TOL3pBCFk=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/logoimagen.png</key>
 		<data>
@@ -294,7 +282,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		IZy6JhX77vIF/Ek5pImVjADX7aA=
+		w4ea3qRVTaHufalzI9aA6odCmog=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/vm_snapshot_data</key>
 		<data>
@@ -801,11 +789,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XgnHO9v50mLLK1meM2+BvPx1WYQ=
+			GePCOBzzliRHuTZekxEPBZ9bRrY=
 			</data>
 			<key>hash2</key>
 			<data>
-			wVxNPFawnJI948baNfTTnqb8RZYyYoXi0qMbM9crebs=
+			PFGeQvg2ISdRPbTlZsmWOg8WB+lfsNOpBIwo2M2jqyg=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -823,22 +811,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eAANAfJ6hv61Nww/OHG1QB9N3Qk=
+			LBaeZ3sMe6fDt0QuhFLNlwuqL50=
 			</data>
 			<key>hash2</key>
 			<data>
-			JaSPj59E+nB9j8v3SE45iZDx/BsZixjLYjH4A8LynUQ=
+			6nKr9tUNJyHd+0sC2nxzOmYFeywQ008S/cXw6soBjjE=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fl+vwZFvAD5MobOww+kw0+5Rp5A=
+			RFyfwBaijlB2OeHCv51c6AvbWwM=
 			</data>
 			<key>hash2</key>
 			<data>
-			CMULipWu29y83G+fyZuDcH0ZIJ14dl+QFe+iMHvYpBI=
+			BkA5CbvYEK3CJMsDbdYRLsEF7Rhjg5ttKp2Qq0Vlk4U=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -1083,17 +1071,6 @@
 			lUErcMgk2GN0B7CmKp3+PEGWO5iGmALv14tiJ8LbRJg=
 			</data>
 		</dict>
-		<key>Frameworks/App.framework/flutter_assets/assets/images/dash.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sHYvv0NxOm7PGWNj2A0nag4E+98=
-			</data>
-			<key>hash2</key>
-			<data>
-			W4wS9CtWh9Tnid7rv3uTMOK2/1XMH2OwJC5j6n1+EPU=
-			</data>
-		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/faons.png</key>
 		<dict>
 			<key>hash</key>
@@ -1114,28 +1091,6 @@
 			<key>hash2</key>
 			<data>
 			BW6IO2epz7p+KWRGSlFNsAEDhFtKhubA6PP7JF9D27U=
-			</data>
-		</dict>
-		<key>Frameworks/App.framework/flutter_assets/assets/images/hero-dash.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2sriJdDQYTF8z5Vp+jUjpYfb540=
-			</data>
-			<key>hash2</key>
-			<data>
-			O237xS3xh7eGKO47gZeqBSlGARjvlODjS8zZQg/jgRU=
-			</data>
-		</dict>
-		<key>Frameworks/App.framework/flutter_assets/assets/images/jungle.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			a2IV9MWGbQEPsHzNd+TOL3pBCFk=
-			</data>
-			<key>hash2</key>
-			<data>
-			le7uWwyEJWKaxnoFadJ0nWR7cpnXVh3e0RAhCsQWx5Q=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/logoimagen.png</key>
@@ -1307,11 +1262,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IZy6JhX77vIF/Ek5pImVjADX7aA=
+			w4ea3qRVTaHufalzI9aA6odCmog=
 			</data>
 			<key>hash2</key>
 			<data>
-			Fhk0OfpF0QcBC+umB5ZXEUsFILELvo82SUOtCL+SyY4=
+			oqg45TTH17fkTepjkax1NbrxLn1yDC1+dIVAj8/I3QY=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/vm_snapshot_data</key>

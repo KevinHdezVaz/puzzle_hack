@@ -35,6 +35,8 @@ class _CustomSolumathState extends State<CustomSolumath> {
     return Stack(
       children: <Widget>[
         Container(
+          width: 
+          400,
           padding: EdgeInsets.only(
               left: Constants.padding,
               top: Constants.avatarRadius + Constants.padding,

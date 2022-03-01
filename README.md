@@ -14,6 +14,6 @@ Construido para Movil (Android, iOS) , Web, MacOS, Windows
 
 ![Alt text](git1.webp)
 ![Alt text](git2.webp)
-![Alt text](git3.webp)
+![Alt text](git3.png)
 
 ![Alt text](git4.webp)

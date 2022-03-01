@@ -44,11 +44,7 @@ const puzzleOptions = <PuzzleImage>[
     assetPath: 'assets/figuras/tiburon.png',
     soundPath: 'assets/sounds/clika.mp3',
   ),
-  PuzzleImage(
-    name: '2vs2',
-    assetPath: 'assets/figuras/tiburon.png',
-    soundPath: 'assets/sounds/clika.mp3',
-  )
+  
 ];
 
 Future<Image> decodeAsset(ByteData bytes) async {

@@ -67,6 +67,7 @@ class _SplashViewState extends State<SplashView>
 
         return ClipPath(
           clipper: CircleTransitionClipper(
+            
             center: Offset(
               size.width * 0.5,
               size.height * 0.5,

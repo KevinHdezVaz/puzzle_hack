@@ -163,14 +163,12 @@ class GameView extends StatelessWidget {
                                         height: 10,
                                       ),
                                       Divider( 
-                                        
+                                        color: Colors.orange,
                                         thickness: 2,),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
+                                    
                                       const GameButtons(),
                                       Padding(
-                                        padding: const EdgeInsets.all(20),
+                                        padding: const EdgeInsets.all(5),
                                         child: SizedBox(
                                           height: puzzleHeight,
                                           child: const AspectRatio(
