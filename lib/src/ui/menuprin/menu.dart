@@ -182,7 +182,7 @@ class _MenuPrincipalState extends State<MenuPrincipal> {
         );
 
         return Container(
-          color: Colors.blue.withOpacity(0.4),
+          color: Colors.blue.withOpacity(0.5),
           child: ClipPath(
             clipper: CircleTransitionClipper(
               center: Offset(
