@@ -84,7 +84,7 @@ class _MenuPrincipalState extends State<MenuPrincipal> {
           Center(
             child: Padding(
               
-         padding: EdgeInsets.only( right: MediaQuery.of(context).size.width/50, left: MediaQuery.of(context).size.width/50),
+         padding: EdgeInsets.only( right: MediaQuery.of(context).size.width/20, left: MediaQuery.of(context).size.width/20),
 
                           child: GridView.count(
                 

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kevinhernandez/Desktop/PuzzleHack/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/kevinhernandez/Documents/puzzle_hack/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/Users/kevinhernandez/.gradle/caches/transforms-2/files-2.1/92727e4a2305866fab4179bf91be9c0a/media-1.2.0/res/values-v24/values-v24.xml",

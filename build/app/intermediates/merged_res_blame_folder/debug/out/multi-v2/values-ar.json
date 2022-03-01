@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kevinhernandez/Desktop/PuzzleHack/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ar/values-ar.xml",
+            "outputFile": "/Users/kevinhernandez/Documents/puzzle_hack/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ar/values-ar.xml",
             "map": [
                 {
                     "source": "/Users/kevinhernandez/.gradle/caches/transforms-2/files-2.1/de16f4b64dab27be6e205eda03cecad0/jetified-media2-session-1.1.3/res/values-ar/values-ar.xml",

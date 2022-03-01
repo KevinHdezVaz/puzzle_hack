@@ -65,16 +65,20 @@ class _SplashViewState extends State<SplashView>
           end: size.height,
         );
 
-        return ClipPath(
-          clipper: CircleTransitionClipper(
+        return Container(
+            color: Colors.blue.withOpacity(0.4),
+          child: ClipPath(
             
-            center: Offset(
-              size.width * 0.5,
-              size.height * 0.5,
+            clipper: CircleTransitionClipper(
+              
+              center: Offset(
+                size.width * 0.5,
+                size.height * 0.5,
+              ),
+              radius: animation.drive(radiusTween).value,
             ),
-            radius: animation.drive(radiusTween).value,
+            child: child,
           ),
-          child: child,
         );
       },
     );

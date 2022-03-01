@@ -9,8 +9,8 @@
 9        android:targetSdkVersion="30" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/debug/AndroidManifest.xml:6:5-66
-11-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/debug/AndroidManifest.xml:6:22-64
+11-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/debug/AndroidManifest.xml:6:5-66
+11-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/debug/AndroidManifest.xml:6:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 12-->[com.google.android.exoplayer:exoplayer-core:2.15.0] /Users/kevinhernandez/.gradle/caches/transforms-2/files-2.1/1c8029bc9c6470bdd4331a8beb2ed60c/jetified-exoplayer-core-2.15.0/AndroidManifest.xml:24:5-79
 12-->[com.google.android.exoplayer:exoplayer-core:2.15.0] /Users/kevinhernandez/.gradle/caches/transforms-2/files-2.1/1c8029bc9c6470bdd4331a8beb2ed60c/jetified-exoplayer-core-2.15.0/AndroidManifest.xml:24:22-76
@@ -38,30 +38,30 @@
 24    </queries>
 25
 26    <application
-26-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:3:4-32:19
+26-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:3:4-32:19
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 27-->[androidx.core:core:1.6.0] /Users/kevinhernandez/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/AndroidManifest.xml:24:18-86
 28        android:debuggable="true"
 29        android:icon="@mipmap/launcher_icon"
-29-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:5:9-45
+29-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:5:9-45
 30        android:label="Puzzle Mania" >
-30-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:4:10-38
+30-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:4:10-38
 31        <activity
-31-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:6:9-26:20
+31-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:6:9-26:20
 32            android:name="app.kevin.hack_puzzle.MainActivity"
-32-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:7:13-41
+32-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:7:13-41
 33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-33-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:11:13-163
+33-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:11:13-163
 34            android:exported="true"
-34-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:8:13-36
+34-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:8:13-36
 35            android:hardwareAccelerated="true"
-35-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:12:13-47
+35-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:12:13-47
 36            android:launchMode="singleTop"
-36-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:9:13-43
+36-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:9:13-43
 37            android:theme="@style/LaunchTheme"
-37-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:10:13-47
+37-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:10:13-47
 38            android:windowSoftInputMode="adjustResize" >
-38-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:13:13-55
+38-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:13:13-55
 39
 40            <!--
 41                 Specifies an Android theme to apply to this Activity as soon as
@@ -70,21 +70,21 @@
 44                 to determine the Window background behind the Flutter UI.
 45            -->
 46            <meta-data
-46-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:18:13-21:17
+46-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:18:13-21:17
 47                android:name="io.flutter.embedding.android.NormalTheme"
-47-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:19:15-70
+47-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:19:15-70
 48                android:resource="@style/NormalTheme" />
-48-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:20:15-52
+48-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:20:15-52
 49
 50            <intent-filter>
-50-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:22:13-25:29
+50-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:22:13-25:29
 51                <action android:name="android.intent.action.MAIN" />
-51-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:23:17-68
-51-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:23:25-66
+51-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:23:17-68
+51-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:23:25-66
 52
 53                <category android:name="android.intent.category.LAUNCHER" />
-53-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:24:17-76
-53-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:24:27-74
+53-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:24:17-76
+53-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:24:27-74
 54            </intent-filter>
 55        </activity>
 56        <!--
@@ -92,11 +92,11 @@
 58             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 59        -->
 60        <meta-data
-60-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:29:9-31:33
+60-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:29:9-31:33
 61            android:name="flutterEmbedding"
-61-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:30:13-44
+61-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:30:13-44
 62            android:value="2" />
-62-->/Users/kevinhernandez/Desktop/PuzzleHack/android/app/src/main/AndroidManifest.xml:31:13-30
+62-->/Users/kevinhernandez/Documents/puzzle_hack/android/app/src/main/AndroidManifest.xml:31:13-30
 63
 64        <uses-library
 64-->[androidx.window:window:1.0.0-beta04] /Users/kevinhernandez/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
